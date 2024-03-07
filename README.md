@@ -6,7 +6,7 @@ Dataset взят с Kaggle https://www.kaggle.com/datasets/alexattia/the-simpson
 
 # Структура репозитория:
 1. dataset - папка с изображениями симпсонов, в ней содержатся файлы для train и отдельно лежат файлы для test
-2. simp_clas - jupyter notebook с комментариями и результатом работы кода
+2. notebook - jupyter notebook с комментариями и результатом работы кода
 3. requirements - текстовый файл, где записаны все, используемые мной библиотеки
 4. label_encoder.pkl - файл, в котором храниться кодировка для каждой метки в датасете 
 
