@@ -1,9 +1,17 @@
-numpy
-random
-torch
-pandas
-matplotlib.pyplot 
-seaborn 
+glob
 os
-torchmetrics
-еorchvisionr
+time
+random
+numpy
+pandas
+hashlib
+multiprocessing
+pickle
+torch
+torch.nn as nn
+torch.optim as optim
+torchvision
+torchmetricsy
+matplotlib
+sklearn
+PIL 
