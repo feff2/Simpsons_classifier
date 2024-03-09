@@ -38,23 +38,10 @@ test_dir = config["dirs"]["test_dir"]
 class_list = os.listdir(train_val_dir)
 
 #training_parameters
-base_lr = config["training_parameters"][" base_lr"]
+base_lr = config["training_parameters"]["base_lr"]
 batch_size = config["training_parameters"]["batch_size"] 
-criterion = ["training_parameters"]["criterion"]
 num_epochs = config["training_parameters"]["num_epochs"]
-scheduler = config["training_parameters"]["scheduler"] 
-optimizer = config["training_parameters"]["optimizer"]
 random_seed = config["training_parameters"]["random_seed"]
-
-#optim_parameters
-weight_decay = config["optim_parameters"]["weight_decay"] 
-lr = config["optim_parameters"]["lr"] 
-amsgrad = config["optim_parameters"]["amsgrad"]
-
-#scheduler_parameters
-mode = ["scheduler_parameters"]["mode"]
-factor = ["scheduler_parameters"]["factor"]
-patience = ["scheduler_parameters"]["patience"]
 
 #output_parameters
 output_model_dir = config["output_parameters"]["out_model_directory"]

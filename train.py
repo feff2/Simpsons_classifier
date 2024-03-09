@@ -13,9 +13,9 @@ def calculate_loss(model, loader, criterion):
 
 
 def train(dataloaders, model):
-    criterion = nn.criterion()
-    optimizer = optim.AdamW(model.parameters(), lr=lr, weight_decay=weight_decay, amsgrad=amsgrad)
-    scheduler = torch.optim.lr_scheduler.scheduler(optimizer, mode=mode, factor=factor, patience=patience)
+    criterion = nn.CrossEntropyLoss()
+    optimizer = optim.AdamW(model.parameters(), lr=0.001, weight_decay=0.001, amsgrad=True)
+    scheduler = torch.optim.lr_scheduler.ReduceLROnPlateau(optimizer, mode='min', factor=0.1, patience=5)
     accuracy = {"train": [], "val": []}
     loss_dict = {"train": [], "val": []}
     start_time = 0
