@@ -1,0 +1,29 @@
+dirs:
+    train_val_dir: "data\simpsons_dataset"
+    test_dir: ""data\kaggle_simpson_testset\kaggle_simpson_testset""
+
+
+
+optim_parameters:
+    lr: 0.001
+    weight_decay: 0.001
+    amsgrad: "True"
+
+scheduler_parameters:
+  mode: "min"
+  factor: 0.1
+  patience: 5
+
+
+training_parameters:
+  batch_size: 64
+  base_lr: 0.001
+  criterion: "CrossEntropyLoss"
+  scheduler: "ReduceLROnPlateau"
+  optimizer: "AdamW"
+  num_epochs: 20
+  random_seed: 42
+    
+output_parameters:
+    out_model_directory: "model/"
+    out_inference_directory: "inference/"
